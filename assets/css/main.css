@@ -155,6 +155,23 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+footer a {
+  color: var(--muted);
+}
+
+footer a:hover {
+  color: var(--text);
+}
+
+/* Site description */
+
+.site-description {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Post list */

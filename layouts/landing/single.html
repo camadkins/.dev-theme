@@ -1,0 +1,12 @@
+{{ define "body" }}
+<div class="landing">
+  <h1>{{ .Site.Title }}</h1>
+  {{ with .Site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+  <div class="links">
+    {{ range $i, $link := .Site.Params.links }}
+      {{ if $i }}<span class="sep">&middot;</span>{{ end }}
+      <a href="{{ $link.url }}">{{ $link.name }}</a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,10 @@
+name = "Camadkins"
+license = "MIT"
+licenselink = ""
+description = "Quiet Signal — a minimal Hugo theme"
+tags = ["minimal", "personal", "blog"]
+min_version = "0.128.0"
+
+[author]
+  name = "Cam Adkins"
+  homepage = "https://camadkins.com"

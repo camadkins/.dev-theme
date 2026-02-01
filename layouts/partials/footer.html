@@ -1,5 +1,6 @@
 <hr>
 <footer>
   <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> by <a href="{{ .Site.Params.authorURL | default "#" }}">{{ .Site.Params.author | default .Site.Title }}</a>
+  &middot; <a href="{{ "index.xml" | absURL }}">rss</a>
   {{ with .Site.Params.license }}<br>{{ . | safeHTML }}{{ end }}
 </footer>

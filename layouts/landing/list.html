@@ -12,5 +12,10 @@
       <a href="{{ $link.url }}">{{ $link.name }}</a>
     {{ end }}
   </div>
+  {{ with .Site.Params.about }}
+  <div class="about">
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
 </div>
 {{ end }}

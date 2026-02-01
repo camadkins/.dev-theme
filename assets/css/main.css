@@ -269,3 +269,11 @@ article .content {
   color: var(--border);
   margin: 0 0.5rem;
 }
+
+.landing .about {
+  margin-top: 2rem;
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

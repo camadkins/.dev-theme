@@ -2,7 +2,7 @@
   <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
   <nav>
     <a href="/post/">archive</a>
-    <a href="{{ "index.xml" | absURL }}">rss</a>
+    {{ with .Site.Params.authorURL }}<a href="{{ . }}">author</a>{{ end }}
   </nav>
 </header>
 <hr>

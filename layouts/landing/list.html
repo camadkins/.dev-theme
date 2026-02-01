@@ -12,9 +12,9 @@
       <a href="{{ $link.url }}">{{ $link.name }}</a>
     {{ end }}
   </div>
-  {{ with .Site.Params.about }}
+  {{ if or .Content .Site.Params.about }}
   <div class="about">
-    <p>{{ . }}</p>
+    {{ if .Content }}{{ .Content }}{{ else }}<p>{{ .Site.Params.about }}</p>{{ end }}
   </div>
   {{ end }}
 </div>

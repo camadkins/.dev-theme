@@ -4,10 +4,6 @@
 <p class="site-description">{{ . }}</p>
 {{ end }}
 
-{{ with .Site.Params.turnstileSiteKey }}
-<div class="cf-turnstile" data-sitekey="{{ . }}" data-theme="auto" data-size="compact"></div>
-{{ end }}
-
 {{ $recentPosts := where (where .Site.RegularPages "Section" "post") "Params.archived" "ne" true }}
 {{ with $recentPosts }}
 <h2>Recent Posts</h2>
